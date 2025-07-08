@@ -5,7 +5,7 @@ Bu proje, modern kriptografinin temel taşlarından biri olan **Eliptik Eğri Kr
 
 ## Neden Bu Proje?
 
-Eliptik Eğri Kriptografisi (ECC), RSA gibi daha eski asimetrik şifreleme algoritmalarına göre daha küçük anahtar boyutlarıyla aynı düzeyde güvenlik sunar. Bu verimlilik, onu mobil cihazlar, gömülü sistemler ve modern web güvenliği (TLS) gibi kaynakların kısıtlı olduğu alanlar için ideal kılar. Bu proje, ECC'nin arkasındaki matematiği ve pratik uygulamaları derinlemesine anlamak için bir öğrenme aracı olarak geliştirilmiştir.
+Eliptik Eğri Kriptografisi (ECC), RSA gibi daha eski asimetrik şifreleme algoritmalarına göre daha küçük anahtar boyutlarıyla aynı düzeyde güvenlik sunar. Bu verimlilik, onu mobil cihazlar, gömülü sistemler ve modern web güvenliği (TLS) gibi kaynakların kısıtlı olduğu alanlar için ideal kılar. Bu proje, ECC'nin arkasındaki matematiği ve pratik uygulamaları derinlemesine anlamak için bir **öğrenme aracı** olarak geliştirilmiştir.
 
 ## Teknik Derinlik ve Güvenlik
 
@@ -112,12 +112,3 @@ Farklı bir eğri kullanmak için (`secp256r1` gibi):
 # Diğer komutlar (sign, verify) anahtar dosyalarından doğru eğriyi otomatik olarak anlar.
 python3 main.py generate --curve secp256r1 --priv r1_priv.pem --pub r1_pub.pem
 ```
-
-## Gelecek Planları
-
-*   **Parola Korumalı Anahtarlar:** Özel anahtarları şifreleyerek ek bir güvenlik katmanı ekleme.
-*   **Şifreleme (ECIES):** Eliptik Eğri Entegre Şifreleme Şeması (ECIES) desteği ekleyerek dosyaların ve mesajların şifrelenmesini sağlama.
-*   **Donanım Güvenlik Modülü (HSM) Desteği:** Özel anahtarların güvenli donanımlarda saklanması ve kullanılması için PKCS#11 arayüzü entegrasyonu.
-*   **Diğer Standart Eğriler:** `secp384r1`, `brainpool` serisi gibi diğer popüler eğriler için destek ekleme.
-
----
