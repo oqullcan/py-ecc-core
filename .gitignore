@@ -1,0 +1,26 @@
+# Sanal ortamlar
+ecc-env/
+venv/
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Build ve distribution klasörleri
+build/
+dist/
+*.egg-info/
+
+# Test sırasında oluşabilecek artık dosyalar
+test_*.pem
+test_*.sig
+test_*.txt
+
+# IDE/Editör'e özel dosyalar
+.vscode/
+.idea/
+*.swp
+*.swo 
